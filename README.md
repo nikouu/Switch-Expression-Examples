@@ -1,4 +1,4 @@
-# Switch-Expression-Examples
+# Switch Expression Examples
 
 Big note: These are switch **expressions** not switch **statements**.
 
