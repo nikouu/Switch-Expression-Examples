@@ -101,3 +101,28 @@ int CharValues(char c) => c switch {
 ```
 Note:
 - While there are no fancy `switch` things happening, it's the **clarity** that the new expression gives us where we can replace mapping objects with equally readable and allocationless(!) expressions
+
+## Example 5
+[Via Andy Gocke](https://twitter.com/andygocke/status/1526653035748896768)
+
+```csharp
+int Sum(Span<int> s) => switch 
+{
+    [] => 0,
+    [var x, .. var xs] => x + Sum(xs)
+}
+```
+Note:
+- The tweet comments how it's looking more like F# and off the top of my head reading this for the first time, I had no idea what's happening. 
+
+## Example 6
+Via me
+```csharp
+bool isCorrectTable = (firstColumnHeader, secondColumnHeader) switch
+{
+    ("Tile", "Original") => true,
+    _ => false
+};
+```
+Note:
+- This is just to create a variable while using tuples rather than use a Switch Expression as a function 
