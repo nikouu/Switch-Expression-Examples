@@ -114,6 +114,7 @@ int Sum(Span<int> s) => switch
 ```
 Note:
 - The tweet comments how it's looking more like F# and off the top of my head reading this for the first time, I had no idea what's happening. 
+- Also, [don't do recursion this way](https://twitter.com/andygocke/status/1526999437062438912), it's just neat looking
 
 ## Example 6
 Via me
