@@ -127,3 +127,20 @@ bool isCorrectTable = (firstColumnHeader, secondColumnHeader) switch
 ```
 Note:
 - This is just to create a variable while using tuples rather than use a Switch Expression as a function 
+
+## Example 7
+[Via David Fowler](https://twitter.com/davidfowl/status/1497820187386474496)
+```csharp
+Dictionary<string, string> Parse(string s) =>
+	s.Split(',')
+	.Select(s => s.Split('=') switch
+	{
+		[var k, var v] => (k, v),
+		_ (null, null),
+	})
+	.Where(p => p.k != null)
+	.ToDictionary(p => p.k, p => p.v);
+```
+Note:
+- This is designed to take in a string like `a=b,c=d,e=f`
+- We get to see a switch expression inside a LINQ `Select()` call
