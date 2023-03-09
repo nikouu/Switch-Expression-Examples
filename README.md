@@ -144,3 +144,16 @@ Dictionary<string, string> Parse(string s) =>
 Note:
 - This is designed to take in a string like `a=b,c=d,e=f`
 - We get to see a switch expression inside a LINQ `Select()` call
+
+## Example 8
+[James Newton-King](https://twitter.com/JamesNK/status/1633658140028964864)
+```csharp
+return items switch
+{
+	[var item] => item,
+	[] => null,
+	[..] => throw new InvalidOperationException("Multiple")
+};
+```
+- Doing `GetSingleOrDefault()` without LINQ
+
