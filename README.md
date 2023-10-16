@@ -104,6 +104,7 @@ Note:
 
 ## Example 5
 [Via Andy Gocke](https://twitter.com/andygocke/status/1526653035748896768)
+[Another via David Fowler with two parameters](https://twitter.com/davidfowl/status/1656504984140402688)
 
 ```csharp
 int Sum(Span<int> s) => switch 
