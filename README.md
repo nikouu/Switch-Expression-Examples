@@ -6,6 +6,8 @@ Big note: These are switch **expressions** not switch **statements**.
 
 [In depth release notes for the switch expressions feature](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#switch-expressions)
 
+(Tweet about scope)[https://twitter.com/MoienTajik/status/1512551734081728515]
+
 ## Example 1
 *Via original documentation*
 
